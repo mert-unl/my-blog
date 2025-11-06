@@ -5,15 +5,17 @@ import Home from "./Pages/Home"
 import Poem from "./Pages/Poem"
 
 
+
 function App() {
+  //const { theme, toggleTheme } = useBlog()
 
   return (
-    <>
-      <Navigation/>
+    <div>
+      <Navigation />
 
       <Routes>
       
-         <Route path="/" exact element={<Home/>}/>
+         <Route path="/" element={<Home/>}/>
          <Route path="/poem" exact element={<Poem/>}/>
 
       </Routes>
@@ -22,7 +24,7 @@ function App() {
 
 
 
-    </>
+    </div>
   )
 }
 

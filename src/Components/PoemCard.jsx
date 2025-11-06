@@ -2,7 +2,10 @@ export default function PoemCard({title,content,img,comment=""}){
 
     return(
         <>  
-        <div className=" py-2 flex flex-col gap-3 ">
+        <div className="flex flex-col gap-4 ">
+            <div className="border-t-1 mt-4 py-2 border-gray-600"></div>
+
+
             <div className="relative w-full rounded-lg overflow-hidden">
                 <img className="h-55 w-full object-cover" src={img}/>
                
@@ -12,13 +15,12 @@ export default function PoemCard({title,content,img,comment=""}){
 
 
 { comment && (
-            <div className="border-1  p-5 rounded-lg mt-5 border-gray-400">
-                <p className="text-sm text-gray-300">Meraklısına;</p>
-                <p className="text-sm mt-2 ms-2 text-gray-300">{comment}</p>
+            <div className="border-1  p-2 rounded-lg mt-4 border-gray-400">
+                <p className="text-xs text-gray-300">Meraklısına;</p>
+                <p className="text-xs mt-1 ms-2 text-gray-300">{comment}</p>
             </div>)
 }
 
-            <div className="border-t-2  p-5  mt-6 border-gray-600"></div>
 
 
         </div> 

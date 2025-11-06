@@ -9,21 +9,48 @@
 
 
           "poems":[
-          {"title":"1.Şiir",
-           "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          },
+          {
+            "id":"1",
+            "title":"Dalgalanan Anıların Hüznünde",
+            "content":"Ölmeli mi insan bu yıkılmış kalpte,\nHissedebilmek için derin bir acıyı.\nGörmeli mi insan yıldız kaymalarını,\nO akıp giden göz yaşlarındaki umutlarını.\nYa da susmalı mı insan,\nSessizlikte, yitirilen sözcüklerle,\nO engin yeşil denizlerde,\nDalgalanan anıların hüznünde.\n\nBelki de kaybolmalı insan,\nKaranlıkta yok olmuş bir iz gibi,\nO kırmızı dikenli dudaklarda,\nSevgiye değen bir öpücük gibi.\n\nBu düşünceler arasında kaybolan yürek için,\nBir melankoli yolculuğu sahtelik çağında,\nBelki de yaşanmalı bu kırık dünyada,\nDuyguların en derinine dalmak için.\n\nAma belki insan olmanın hikayesi burada,\nBazen acıyı sevmek, bazen sevgiyi seçmek,\nVe bazen de sessizce bir köşede beklemek,\nKendinde kaybolmak ya da var olmak arasında.\n\nÖyleyse insan olmanın anlamını ararken,\nKorkularını ve umutlarını birleştir.\nBuluruz belki de gerçek benliğimizi,\nBu duygusal yolculukta kaybolup giderken.\n\nVe bu kırmızı nehir, mavi bulutlar,\nEngin denizler ve dikenli dudaklar,\nBelki de içimizdeki birer yansımadır,\nYaşamın sonsuz duygu selinde,\nDalgalanan anıların hüznünde.",
+            "imgSrc":"https://picsum.photos/id/1022/800/800",
+            "comment":"Bu şiir en sevdiğim şiirler arasında yer almaktadır. Yazdığım son şiirlerden olup bir kaç farklı varyasyonu bulunmaktadır."   
+        },
           
-          {"title":"2.Şiir",
-           "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          }, 
-          {"title":"3.Şiir",
-           "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          }
+          {
+            "id":"2",
+            "title":"Ufkun Mimarı",
+           "content":"Yalnız ufkun mimarı \nGörebilir gizlediğim sırrı\nVar kalbimde benim de bir ağrı\nBu zuhur kimin imarı \n\nDüşünmeden emin  olma\nBilmez insan doğruyu yanlışı\nGeceleri ışıkları kapatma\nGörsün gözler bu aşık bakışı\n\nNedir sendeki bu acınası suret\nBırak nefsini  aç elini dua et\nBelki vesile olur o göklerdeki kudret\nIsrarcı olma biraz sabır ve selamet\n\nAncak o zaman açar yüzünde nur\nBiraz da kendini sevsen ne olur\nBu şiiri ancak bir mecnun okur\nUnutma, insan sadece bir kuldur",
+            "imgSrc":"https://picsum.photos/id/1045/800/800",
+              "comment":"Yazdığım ilk şiir olma özellğini taşıyor."
+          },
+          {
+          "id":"3",
+          "title":"No Going Back",
+           "content":"There is no going back\nPast experience is your backpack\n\nNo fear , no sorrow\nAnd focus tomorrow. \n\nDisappear, \nAnd come back to yourself. \n\nWipe your tears \nAnd shut off your emotions. \n\nGive your self a black blossom\nSwear on your Narcissism. \nNosce te ipsum.",
+           "imgSrc":"https://picsum.photos/id/1057/800/800",
+           "comment":"İngilizce Yazığım İlk Şiir"
+         },
+{
+         "id":"4",
+         "title":"Nerden Çıkardın?",
+         "content":"Nerden çıkardın önemli biri olduğunu\nKaçamazsın gerçeklerden biliyorsun\nGerçekleşmesini bekleyen hayaller kurduğunu\nGözlerin kapalı, zamana bıraktığını\nGerçekleri kim söyleyecek sana\nAkıp giderken zaman, senin derin derin uyukladığını.\n\nNerden çıkardın önemli biri olduğunu\nYaşıtların dünyayı fethederken\nSen durdun, bir köşede kuruldun\nGörüyorsun belki de acizliğini\nAma hissediyor musun yazın o derin soğukluğunu\nGerçekleşmesini bekleyen hayaller kurduğunu\n\nNerden çıkardın önemli biri olduğunu\nHer adımında büyüyor içindeki boşluk\nBir zamanlar sımsıcak olan rüyaların\nŞimdi serin gecelerde bile üşütüyor mu seni\nKendi yolunu çizmeden, nereye varmayı bekliyorsun\nKaçamazsın gerçeklerden biliyorsun\n\nNerden çıkardın önemli biri olduğunu\nDüşlerinin peşinde sürüklenirken\nBirileri çoktan gerçeği yakaladı\nSenin hayallerin onların rutinleri\nKendi gölgen bile unuttu koştuğunu\nSen hala beklerken büyük bir kaderi\nKaçıyorsun masallardan eskilerin bile unuttuğu",
+  "imgSrc":"https://picsum.photos/id/1065/800/800",
+           "comment":"İngilizce Yazığım İlk Şiir"
+
+},
+{
+"id":"5",
+"title":"Aç Bir Kurt",
+"content":"Göreceksin ve anlayacaksın\nYapayalnızsın, saklanıp ağlayacaksın\nRuhunu karanlığa gömeceğim\nSeni bir mum gibi söndüreceğim\nSenin için hiç umut yok çocuk \n\nGüçlüsün ama korkacaksın\nZamanı geldiğinde,\nSende diğerleri gibi,\nÖnümde diz çöküp yalvaracaksın\nDüşündüklerinin ötesindeyim,\nZihninin derinliklerinde,\nRuhunun tam içinde,\nHer bir hücrendeyim\n\nBeni öldüremezsin\nYakalayamaz ya da yok edemezsin\nKorkuyorsun biliyorum\nHer nefesini dinliyorum\nZamanın artık geldi çocuk\nBen susamış, aç bir kurt\nSense zavallı bir kuzucuk.",
+"imgSrc":"https://picsum.photos/id/1032/800/800",
+"comment":"Bir hikayemdeki kötücül karakterin seslenişi."
+}
 
 
 
-
-          ]
+ 
+      ]
     
     
     
