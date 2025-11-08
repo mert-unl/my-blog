@@ -1,13 +1,18 @@
+import { useContext } from "react";
 import HomeCard from "../Components/HomeCard";
+import { AppContext } from "../context/AppContext";
 
 export default function Home(){
 
+     const {dataa} = useContext(AppContext)
+ 
+     const poems = dataa.poems
 
 
     return(
-        <div className="p-5 sm:px-40 sm:py-10">
+    <div className="p-5 mt-20 max-w-7xl mx-auto">
  
-       <img src="https://picsum.photos/id/1045/500/300" className="h-60 w-full"/>
+       <img src="https://picsum.photos/id/1044/3200/3200" className="h-60    md:h-150 object-cover w-full rounded-lg"/>
         <p className="mt-4 font-semibold text-2xl">Hakkımda</p>
        <p className="text-md py-2 text-gray-200">
             Bu blog; şiirlerimi, hikayelerimi, düşüncelerimi ve hobilerimi paylaştığım kişisel bir alan.  
@@ -18,26 +23,22 @@ export default function Home(){
        
         <div className="flex flex-col gap-8 border-t-1 border-gray-400 mt-10"> 
 
-             <h3 className="text-center text-3xl font-semibold mt-6">Son Paylaşılanlar</h3>
-           <HomeCard 
-                title="Lorem Ipsum Dolor Sit Amet" 
-                content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies, nunc ut commodo convallis, erat purus viverra lorem, vitae imperdiet lorem metus vel ante."
-                img="https://picsum.photos/id/1005/500/300"   
-                tags={["şiir", "duygu", "anı"]}
-            />
-            <HomeCard 
-                title="Consectetur Adipiscing Elit" 
-                content="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-                img="https://picsum.photos/id/1011/500/300"   
-                tags={["hikaye", "deneme", "yazı"]}
-            />
-
-            <HomeCard 
-                title="Ut Enim Ad Minim Veniam" 
-                content="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."
-                img="https://picsum.photos/id/1021/500/300"   
-                tags={["fikir", "eser", "gözlem"]}
-            />
+             <h3 className="text-center text-3xl font-semibold mt-6">Öne Çıkanlar</h3>
+             
+             <div className="grid grid-cols-1 place-items-center md:grid-cols-2  gap-12 ">
+          
+             
+             {poems.map((poem)=>
+                        <HomeCard  
+                              key={poem.id}
+                              title={poem.title}
+                              content={poem.content}
+                              img={poem.imgSrc}
+                              tags={poem.tags}
+                        /> )
+                    }
+              
+             </div>
          </div>
         </div>
     )

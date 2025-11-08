@@ -7,9 +7,9 @@ export const AppContext = createContext()
 function AppContextProvider({children}) {
 
 let dataa = data["tr"] 
- 
+ let user = data["user"]
 return (
- <AppContext.Provider value={{dataa}}>
+ <AppContext.Provider value={{dataa,user}}>
    {children}
  </AppContext.Provider>
  )

@@ -10,7 +10,7 @@ const poems = dataa.poems
 
   return(
 
-      <div className="p-5 flex flex-col gap-5">
+      <div className="p-5 md:px-100 md:py-10  mt-15 flex flex-col gap-5">
         <h2 className="text-2xl text-center">Şiirlerim</h2>
         <h3 className="text-xl font-bold"></h3>
           {poems.map((poem)=>
