@@ -9,7 +9,7 @@ export default function ReadingPoem(){
         <>  
             <div className="flex flex-col gap-4  mt-4 md:mt-12  color-[var(--accent2)] md:py-12 md:px-120  py-16 px-4 ">
 
-                    <img className="h-55 md:h-80 w-full rounded-lg object-cover" src={`https://picsum.photos/id/${poem.imgSrc}/3200/3200`}/>
+                    <img className="h-55 md:h-100 w-full rounded-lg object-cover" src={`https://picsum.photos/id/${poem.imgSrc}/3200/3200`}/>
 
                 <p className="text-3xl  md:text-5xl font-medium md:py-4 font-serif italic">{poem.title}</p>
                 <p className="text-md md:text-xl  italic whitespace-pre-line leading-relaxed tracking-wide">{poem.content}</p> 
