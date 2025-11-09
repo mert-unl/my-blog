@@ -8,12 +8,25 @@
  color: white;
    line-height: 1.2;
      color-scheme: light dark;
+        transition: background-color 1s ease, color 1s ease-in;
 
-
-
-
+     --accent1:  rgb(0, 0, 0);
+     --accent2: white;
+     --accentborder1:  rgb(255, 218, 118);
 }
 
+.light{
+ background-color: #fffffff3;
+   transition: background-color 1s ease, color 1s  ease-in;
+
+ color: rgb(0, 0, 0);
+   line-height: 1.2;
+     color-scheme: light dark;
+   --accent1:  rgb(255, 255, 255);
+   --accent2: black;
+        --accentborder1:  rgb(231, 154, 10);
+
+}
 
 /*
 :root {

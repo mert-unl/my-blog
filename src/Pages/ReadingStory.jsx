@@ -30,7 +30,7 @@ export default function ReadingStory() {
   };
 
   return (
-    <div className="px-4 md:px-80 mt-10 py-20 text-white leading-relaxed">
+    <div className="px-4 md:px-80 mt-10 py-20  color-[var(--accent2)] leading-relaxed">
       <h1 className="text-4xl font-bold mb-10">{story.title}</h1>
 
       <p className="text-base md:text-lg whitespace-pre-line mb-10">{currentText}</p>

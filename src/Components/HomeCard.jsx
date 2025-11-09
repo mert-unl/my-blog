@@ -13,7 +13,7 @@ export default function HomeCard({title,content,img,tags=[],id}){
                 </div>    
             </div>           
             <p className="text-2xl  md:text-3xl  font-semibold">{title}</p>
-            <p className="text-md text-gray-300  md:w-140 line-clamp-3 md:line-clamp-4">{content}</p> 
+            <p className="text-md color-[var(--accent1)]  md:w-140 line-clamp-3 md:line-clamp-4">{content}</p> 
             <p className="border-b-1 md:text-xl w-fit font-semibold text-orange-300"><Link  to={`/poems/${id}`} className="hover:text-orange-200 transition-colors duration-300">Gönderiye Git  →</Link> </p>  
         </div> 
         </>
