@@ -4,7 +4,7 @@ import { useParams, useSearchParams, useNavigate } from "react-router-dom";
 
 const CHARS_PER_PAGE = 12000;
 
-export default function Reading() {
+export default function ReadingStory() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();

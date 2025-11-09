@@ -10,9 +10,7 @@ const poems = dataa.poems
 
   return(
 
-      <div className="p-5 md:px-100 md:py-10  mt-15 flex flex-col gap-5">
-        <h2 className="text-2xl text-center">Şiirlerim</h2>
-        <h3 className="text-xl font-bold"></h3>
+        <div className="p-4 md:px-120 md:py-40 mt-20  md:mt-2  grid grid-cols-1 md:grid-cols-2 gap-10">
           {poems.map((poem)=>
               <PoemCard  
                     key={poem.id}
@@ -20,8 +18,10 @@ const poems = dataa.poems
                     content={poem.content}
                     img={poem.imgSrc}
                     comment={poem.comment}
+                    id={poem.id}
+
               /> )
           }
-      </div>
+           </div>
     )
 }

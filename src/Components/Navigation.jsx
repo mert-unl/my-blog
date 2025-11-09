@@ -9,10 +9,14 @@ export default function Navigation(){
 
   const navClass = ({ isActive }) =>
   isActive
-    ? "text-orange-400 font-semibold transition-colors duration-300"
-    : "hover:text-orange-300 transition-colors duration-300 ease-in-out";
+    ? "text-orange-400 font-semibold transition-all md:text-xl duration-500"
+    : "hover:text-orange-300 transition-all md:text-lg duration-500";
     return(
         <div className="navbar px-5 md:px-12 md:py-6 m-0 border-b-1  border-t-1 border-b-gray-500 fixed z-2 bg-black top-0 left-0 border-t-gray-500 justify-between ">
+ 
+
+
+
  
   
  <div className="md:hidden">
@@ -23,29 +27,29 @@ export default function Navigation(){
       <ul
         tabIndex="-1"
         className="menu menu-sm  dropdown-content bg-base-100  rounded-box z-1 w-fit p-1 shadow">
-             <li><Link to="/">Ana Sayfa</Link></li>
-        <li><Link to="/poem">Şiirler</Link></li>
-        <li><a>Hikayeler</a></li>
-        <li><a>Dublajlar</a></li>
-         <li><a>Çizimler</a></li>
-        <li><a>Yazılar</a></li>
+             <li><NavLink className={navClass} to="/">Ana Sayfa</NavLink></li>
+          <li><NavLink className={navClass} to="/poems">Şiirler</NavLink></li>
+           <li><NavLink className={navClass} to="/stories">Hikayeler</NavLink></li>
+         <li><NavLink className={navClass} to="/dubs">Dublajlar </NavLink></li>
+           <li><NavLink className={navClass} to="/drawings">Çizimler </NavLink></li>
+         <li><NavLink className={navClass} to="/writings">Yazılar </NavLink></li>
 
       </ul>
     </div>
   </div>
 
-  <div className="hidden md:flex  justify-center gap-8 ">
+  <div className="hidden md:flex  justify-center gap-12 ">
    <NavLink className={navClass} to="/">Ana Sayfa</NavLink>
-     <NavLink className={navClass} to="/poem">Şiirler</NavLink>
+     <NavLink className={navClass} to="/poems">Şiirler</NavLink>
            <NavLink className={navClass} to="/stories">Hikayeler</NavLink>
-     <NavLink className={navClass} to="dubs">Dublajlar</NavLink>
-      <NavLink className={navClass} to="dubs">Çizimler</NavLink>
-       <NavLink className={navClass} to="dubs">Yazılar</NavLink>
+     <NavLink className={navClass} to="/dubs">Dublajlar</NavLink>
+      <NavLink className={navClass} to="/drawings">Çizimler</NavLink>
+       <NavLink className={navClass} to="/writings">Yazılar</NavLink>
 
   </div>
   
   <div className="navbar-center">
-    <a className="text-xl text-orange-300 font-semibold" href="https://my-portfolyo-taupe.vercel.app/">{user.name}</a>
+    <a className="text-2xl text-orange-300 font-semibold" href="https://my-portfolyo-taupe.vercel.app/">{user.name}</a>
   </div>
 </div>
             )

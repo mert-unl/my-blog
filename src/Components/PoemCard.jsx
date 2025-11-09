@@ -1,20 +1,22 @@
-export default function PoemCard({title,content,img,comment=""}){
+import { NavLink,Link } from "react-router-dom"
+
+export default function PoemCard({title,content,id,img,comment=""}){
 
     return(
         <>  
-            <div className="flex flex-col gap-4   ">
-                <div className="border-t-1 mt-4 py-2 border-orange-300"></div>
+       <div className='flex flex-col gap-4 border-1 transition-transform hover:scale-104   hover:border-amber-400  hover:border-2  rounded-2xl border-amber-200  p-5 duration-500' >
 
-                    <img className="h-55 md:h-100 w-full rounded-lg object-cover" src={`https://picsum.photos/id/${img}/3200/3200`}/>
+                    <img className="h-50 md:h-105 w-full rounded-lg object-cover" src={`https://picsum.photos/id/${img}/3200/3200`}/>
 
-                <p className="text-xl  md:text-4xl font-medium py-2 font-serif italic">{title}</p>
-                <p className="text-sm md:text-lg  text-gray-300 italic whitespace-pre-line leading-relaxed tracking-wide">{content}</p> 
-                { comment && (
-                    <div className="border-1  p-2 rounded-xl mt-4 border-gray-400">
-                        <p className="text-xs md:text-lg text-gray-300">Meraklısına;</p>
-                        <p className="text-xs  md:text-lg  mt-1 ms-2 text-gray-300">{comment}</p>
-                    </div>)
-                }
+                  <p className="text-lg  md:text-2xl font-medium py-2 font-serif">{title}</p>
+                 <p>{comment}</p>
+                  <Link
+                        to={`/poems/${id}`}
+                        className="text-amber-400 flex align-bottom hover:text-orange-200 text-xl  transition-colors duration-300 font-medium hover:underline w-fit"
+                      >
+                        Şiiri Oku →
+                      </Link> 
+
             </div> 
         </>
     )
