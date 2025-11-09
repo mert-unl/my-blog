@@ -4,7 +4,8 @@ import { AppContext } from "../context/AppContext"
 export default function Footer(){
 
     const {user} = useContext(AppContext)
-
+const year = new Date().getFullYear();
+    
     return(
             <>
                 <div className="mt-10">
@@ -13,7 +14,7 @@ export default function Footer(){
                     <LogoAndLink link="https://letterboxd.com/troemanes/" name="LetterBoxd" img="/letterboxd.png"/>
 
                 </div>                
-                <p className="text-center py-6">Bu blog <span className="underline">{user.name}</span> tarafından yapılmıştır. Tüm hakları saklıdır.</p>
+                <p className="text-center py-6">Bu blog <span className="underline">{user.name}</span> tarafından yapılmıştır.<br></br>  © {new Date().getFullYear()} Tüm hakları saklıdır.</p>
 
                 </div>
             </>
