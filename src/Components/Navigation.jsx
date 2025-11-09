@@ -49,7 +49,7 @@ export default function Navigation(){
   </div>
   
   <div className="navbar-center">
-    <a className="text-2xl text-orange-300 font-semibold" href="https://my-portfolyo-taupe.vercel.app/">{user.name}</a>
+    <a className="text-2xl text-orange-300 font-semibold"  target="_blank" href="https://my-portfolyo-taupe.vercel.app/">{user.name}</a>
   </div>
 </div>
             )

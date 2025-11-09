@@ -10,7 +10,7 @@ export default function Footer(){
                 <div className="mt-10">
                 <div className="border-t-1 border-gray-500"></div>
                  <div className="flex flex-row justify-center gap-12">
-                    <LogoAndLink link="https://letterboxd.com/troemanes/" name="LetterBoxd" img="../public/letterboxd.png" />
+                    <LogoAndLink link="https://letterboxd.com/troemanes/" name="LetterBoxd" img="/letterboxd.png"/>
 
                 </div>                
                 <p className="text-center py-6">Bu blog <span className="underline">{user.name}</span> tarafından yapılmıştır. Tüm hakları saklıdır.</p>
