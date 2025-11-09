@@ -11,8 +11,8 @@ export default function ReadingPoem(){
 
                     <img className="h-55 md:h-80 w-full rounded-lg object-cover" src={`https://picsum.photos/id/${poem.imgSrc}/3200/3200`}/>
 
-                <p className="text-xl  md:text-5xl font-medium md:py-4 font-serif italic">{poem.title}</p>
-                <p className="text-sm md:text-xl  italic whitespace-pre-line leading-relaxed tracking-wide">{poem.content}</p> 
+                <p className="text-3xl  md:text-5xl font-medium md:py-4 font-serif italic">{poem.title}</p>
+                <p className="text-md md:text-xl  italic whitespace-pre-line leading-relaxed tracking-wide">{poem.content}</p> 
                 { poem.comment && (
                     <div className="border-1  p-3 rounded-lg mt-6 w-fit border-gray-400">
                         <p className="text-sm md:text-md ">Meraklısına;</p>
