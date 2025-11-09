@@ -5,10 +5,11 @@
 
 :root {
  background-color: #0e0d0d;
+ 
  color: white;
    line-height: 1.2;
      color-scheme: light dark;
-        transition: background-color 1.2s ease-in;
+        transition: background-color 1.2s ease-out;
 
      --accent1:  rgb(0, 0, 0);
      --accent2: white;
@@ -17,7 +18,7 @@
 
 .light{
  background-color: #fffffff3;
-transition: background-color 1.2s ease-in;
+transition: background-color 1.2s ease-out;
  color: rgb(0, 0, 0);
    line-height: 1.2;
      color-scheme: light dark;
