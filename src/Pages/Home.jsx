@@ -16,7 +16,7 @@ export default function Home(){
         <div className="text-md py-2 flex flex-col gap-2 color-[var(--accent1)]">
              <p>Merhaba, ben Mert.  Bu blog; hobilerimi, ilgi alanlarımı ve zaman zaman zihnimden geçen düşünceleri paylaştığım kişisel bir alan.</p>
              <p>Blogdaki yazılarımda bazı yazım hataları ve eksikler olabilir. Özellikle hikayelerim hala yazım ve geliştirme sürecinde, şimdilik kısa özetlerine göz atabilirsiniz.</p>
-             <p>Önce THY pilotluk sınavlarına girdim, ardından kafamdaki bir girişim fikrini hayata geçirmek için mobil uygulamalar geliştirmeye başladım. Zamanla frontend geliştirmeye yöneldim ve hala bu alanda öğrenmeye devam ediyorum.</p>
+             <p>İnşaat mühendisliğinden mezun olduktan sonra bir süre çalışıp bana uygun olmadığına karar verdim. Ardından başka alanlara yöneldim. Önce THY pilotluk sınavlarına girdim, ardından kafamdaki bir girişim fikrini hayata geçirmek için mobil uygulamalar geliştirmeye başladım. Zamanla frontend geliştirmeye yöneldim ve hala bu alanda öğrenmeye devam ediyorum.</p>
              <p>Portföy siteme sağ üstte yer alan adıma tıklayarak ulaşabilirsiniz.</p>
         </div>
 

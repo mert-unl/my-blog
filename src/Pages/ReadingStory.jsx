@@ -1,8 +1,8 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AppContext } from "../context/AppContext";
 import { useParams, useSearchParams, useNavigate } from "react-router-dom";
 
-const CHARS_PER_PAGE = 12000;
+const WORDS_PER_PAGE = 1500;
 
 export default function ReadingStory() {
   const { slug } = useParams();
@@ -13,25 +13,35 @@ export default function ReadingStory() {
   const { dataa } = useContext(AppContext);
   const story = dataa.stories.find((s) => s.slug === slug);
 
+ useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [page]);
+
   if (!story)
     return (
       <div className="p-20 text-center text-3xl text-white">Hikaye yok</div>
     );
 
-  const text = story.content;
-  const totalPages = Math.ceil(text.length / CHARS_PER_PAGE);
+ 
+  const words = story.content.split(" ");
+  const totalPages = Math.ceil(words.length / WORDS_PER_PAGE);
 
-  const start = (page - 1) * CHARS_PER_PAGE;
-  const end = start + CHARS_PER_PAGE;
-  const currentText = text.slice(start, end);
+  const start = (page - 1) * WORDS_PER_PAGE;
+  const end = start + WORDS_PER_PAGE;
+
+
+  const currentText = words.slice(start, end).join(" ");
+
 
   const goPage = (p) => {
     navigate(`/stories/${slug}?page=${p}`);
   };
 
   return (
-    <div className="px-4 md:px-80 mt-10 py-20  color-[var(--accent2)] leading-relaxed">
-      <h1 className="text-4xl font-bold mb-10">{story.title}</h1>
+    <div className="px-4 md:px-80 mt-10 py-20  flex  flex-col gap-4 color-[var(--accent2)] leading-relaxed">
+       <p>Sayfa: {page} / {totalPages}</p> 
+      <img  className="w-screen h-60  md:h-110 rounded-xl  object-cover"  src={`https://picsum.photos/id/${story.imgSrc}/3200/3200`}/>
+     <h1 className="text-4xl font-bold py-2">{story.title}</h1>
 
       <p className="text-base md:text-lg whitespace-pre-line mb-10">{currentText}</p>
 
