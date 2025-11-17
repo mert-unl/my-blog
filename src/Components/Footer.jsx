@@ -8,7 +8,7 @@ const year = new Date().getFullYear();
     
     return(
             <>
-                <div className="mt-10">
+                <div className="py-10">
                 <div className="border-t-1 border-gray-500"></div>
                  <div className="flex flex-row justify-center gap-12">
                     <LogoAndLink link="https://letterboxd.com/troemanes/" name="LetterBoxd" img="/letterboxd.png"/>
@@ -16,7 +16,7 @@ const year = new Date().getFullYear();
                     <LogoAndLink link="https://suno.com/@troemanes" name="Suno" img="/sunov2.png"/>
 
                 </div>                
-                <p className="text-center py-6">Bu blog <span className="underline">{user.name}</span> tarafından yapılmıştır.<br></br>  © {year} Tüm hakları saklıdır.</p>
+                <p className="text-center py-8">Bu blog <span className="underline">{user.name}</span> tarafından yapılmıştır.<br></br>  <b>© {year}</b> Tüm hakları saklıdır.</p>
 
                 </div>
             </>

@@ -57,7 +57,7 @@ export default function Navigation(){
    
   <div className="navbar-center gap-8">
     <ToggleTheme change={change} theme={theme}/>
-    <a className="text-2xl text-orange-300 font-semibold"  /* target="_blank" href="https://my-portfolyo-taupe.vercel.app/" */ >{user.name}</a>
+    <a className="text-2xl text-orange-300 font-semibold"  target="_blank" href="https://mertunal.vercel.app/" >{user.name}</a>
   </div>
  </div>
             )
