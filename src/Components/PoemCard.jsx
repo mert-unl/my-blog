@@ -1,6 +1,6 @@
 import { NavLink,Link } from "react-router-dom"
 
-export default function PoemCard({title,content,id,img,comment=""}){
+export default function PoemCard({title,id,img,comment=""}){
 
     return(
         <>  

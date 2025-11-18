@@ -17,7 +17,7 @@ export default function Navigation(){
     return(
    
   
-   <div className="navbar px-5    md:px-12 md:py-6 m-0 border-b-1  border-t-1 border-b-gray-500 fixed z-2 bg-[var(--accent1)] top-0 left-0 border-t-gray-500 justify-between ">
+   <div className="navbar px-5 md:px-12 md:py-6 m-0 border-b-1  border-t-1 border-b-gray-500 fixed z-2 bg-[var(--accent1)] top-0 left-0 border-t-gray-500 justify-between ">
 
 
  
