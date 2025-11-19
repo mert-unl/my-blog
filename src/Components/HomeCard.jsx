@@ -6,7 +6,7 @@ export default function HomeCard({title,content,img,tags=[],id}){
         <>  
         <div className=" p-3  flex flex-col gap-4 transition-transform hover:scale-104   hover:border-[var(--accentborder1)]  hover:border-1 rounded-2xl  md:p-6 duration-500 ">
             <div className="relative w-full rounded-lg lg:flex  overflow-hidden">
-                <img className="h-55 md:h-100 md:w-140 rounded-xl  w-full object-cover  "  src={`https://picsum.photos/id/${img}/3200/3200`}/>
+                <img className="h-55 lg:h-100 md:w-140 rounded-xl  w-full object-cover  "  src={`https://picsum.photos/id/${img}/3200/3200`}/>
                 <div className="absolute bottom-2 flex gap-1 px-2">{    
                         tags.map((tag,index)=> <p  key={index} className=" px-3 py-1  md:px-5  rounded-md text-md md:text-2xl font-normal text-white tracking-wide backdrop-blur-xs bg-gray-700/30">{tag}</p>
                     )}
