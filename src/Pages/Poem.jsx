@@ -19,9 +19,8 @@ const poems = dataa.poems
                     img={poem.imgSrc}
                     comment={poem.comment}
                     id={poem.id}
-
-              /> )
-          }
+               /> 
+            )}
            </div>
     )
 }

@@ -5,7 +5,8 @@ function ToggleTheme({change,theme}) {
     <div>
    <label className="toggle text-base-content">
   <input type="checkbox" onClick={change} checked={theme==="light"}  />
-     <svg
+              
+                <svg
                   className="w-4 h-4 text-[#000000] "
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -13,7 +14,8 @@ function ToggleTheme({change,theme}) {
                 >
                   <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
                 </svg>
- <svg
+                
+                <svg
                   className="w-4 h-4 text-[#000000]"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

@@ -3,8 +3,9 @@ import Empty from '../Components/Empty'
 
 function Writing() {
   return (
-    <div>      <Empty/>
-</div>
+    <div>      
+     <Empty/>
+   </div>
   )
 }
 
